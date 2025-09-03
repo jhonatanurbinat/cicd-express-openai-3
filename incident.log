@@ -1,0 +1,12 @@
+2025-09-03 09:10:12,456 ERROR [auth-service] - Failed to authenticate user: Invalid credentials for user 'admin'
+2025-09-03 09:11:45,789 WARN  [db-connector] - Database connection slow: latency = 2450ms
+2025-09-03 09:13:01,123 ERROR [payment-service] - Payment processing failed for orderId=12345: Insufficient funds
+2025-09-03 09:15:33,654 ERROR [inventory-service] - Failed to update inventory for productId=789: TimeoutError
+2025-09-03 09:17:29,312 INFO  [scheduler] - Starting daily job: cleanup_temp_files
+2025-09-03 09:18:02,987 ERROR [scheduler] - Job cleanup_temp_files failed: Permission denied
+2025-09-03 09:20:47,102 ERROR [auth-service] - Token validation failed: Expired token for user 'john.doe'
+2025-09-03 09:21:17,444 WARN  [api-gateway] - Rate limit exceeded for IP 192.168.1.101
+2025-09-03 09:22:59,543 ERROR [email-service] - Failed to send email to user@example.com: SMTPException
+2025-09-03 09:24:21,789 ERROR [payment-service] - Currency conversion failed for orderId=67890: Unsupported currency 'BTC'
+2025-09-03 09:25:40,321 INFO  [system-monitor] - CPU usage exceeded threshold: 92%
+2025-09-03 09:26:18,119 ERROR [system-monitor] - Disk I/O error on /dev/sda1
