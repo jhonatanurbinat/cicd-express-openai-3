@@ -24,10 +24,11 @@ jobs:
           pip install -r requirements.txt
 
   deploy:
+    needs: build  
     runs-on: ubuntu-latest
     container: ghcr.io/railwayapp/cli:latest
     env:
-      SVC_ID: appealing-appreciation
+      SVC_ID: e90218d6-372d-43f0-bf5f-83f3d6efb567
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
     steps:
       - uses: actions/checkout@v3
