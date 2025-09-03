@@ -91,7 +91,7 @@ def login():
     token = jwt.encode(payload, secret, algorithm='HS256')
     return jsonify({'token': token})
 
-@app.route('/status', methods=['GET'])
+@app.route('/status2', methods=['GET'])
 def status():
     return jsonify({'status': 'ON'})
 
